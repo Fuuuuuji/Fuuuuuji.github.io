@@ -1,4 +1,5 @@
 .rtl {
+  font-family: Noto Sans SC, Fira Code;
   direction: rtl;
 }
 .rtl #nav li {
