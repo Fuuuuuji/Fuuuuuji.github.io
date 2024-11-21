@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="如你所见，我基于Hexo建立了自己的Blog网站！但建立一个让自己满意的Blog网站需要长时间的探索、学习、实践，因此我想将这个过程中遇到的问题、思路和方法记录下来，让自己在未来回看时可以复用，幸运的话也可能帮助到你，那样可就太好啦！不过需要注意的是：所有的方法均基于cactus主题进行，解决方案主要来自网络搜索与ChatGPT。 结构分析首先应该熟悉cactus主题目录结构，大致知道各个部分的作">
+    <meta name="description" content="如你所见，我基于Hexo建立了自己的Blog网站！但建立一个让自己满意的Blog网站需要长时间的探索、学习、实践，因此我想将这个过程中遇到的问题、思路和方法记录下来，让自己在未来回看时可以复用，幸运的话也可能帮助到你，那样可就太好啦！不过需要注意的是：所有的方法均基于cactus主题进行，解决方案主要来自网络搜索与ChatGPT。 前期准备 Hexo的安装。 主题选择，以及cactus主题的安装。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo Notes">
 <meta property="og:url" content="http://example.com/2024/11/20/hexo_notes/index.html">
 <meta property="og:site_name" content="Fuuuuuji&#39;s Blog">
-<meta property="og:description" content="如你所见，我基于Hexo建立了自己的Blog网站！但建立一个让自己满意的Blog网站需要长时间的探索、学习、实践，因此我想将这个过程中遇到的问题、思路和方法记录下来，让自己在未来回看时可以复用，幸运的话也可能帮助到你，那样可就太好啦！不过需要注意的是：所有的方法均基于cactus主题进行，解决方案主要来自网络搜索与ChatGPT。 结构分析首先应该熟悉cactus主题目录结构，大致知道各个部分的作">
+<meta property="og:description" content="如你所见，我基于Hexo建立了自己的Blog网站！但建立一个让自己满意的Blog网站需要长时间的探索、学习、实践，因此我想将这个过程中遇到的问题、思路和方法记录下来，让自己在未来回看时可以复用，幸运的话也可能帮助到你，那样可就太好啦！不过需要注意的是：所有的方法均基于cactus主题进行，解决方案主要来自网络搜索与ChatGPT。 前期准备 Hexo的安装。 主题选择，以及cactus主题的安装。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-11-20T11:04:13.000Z">
-<meta property="article:modified_time" content="2024-11-21T07:51:49.585Z">
+<meta property="article:modified_time" content="2024-11-21T11:08:12.334Z">
 <meta property="article:author" content="Fuuuuuji">
 <meta property="article:tag" content="Tools">
 <meta name="twitter:card" content="summary">
@@ -114,7 +114,7 @@
     
     
       <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90"><span class="toc-number">1.</span> <span class="toc-text">结构分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E5%B8%83%E5%B1%80"><span class="toc-number">2.</span> <span class="toc-text">页面布局</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8F%9C%E5%8D%95%E6%A0%8F"><span class="toc-number">2.1.</span> <span class="toc-text">菜单栏</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87"><span class="toc-number">1.</span> <span class="toc-text">前期准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90"><span class="toc-number">2.</span> <span class="toc-text">结构分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E5%B8%83%E5%B1%80"><span class="toc-number">3.</span> <span class="toc-text">页面布局</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8F%9C%E5%8D%95%E6%A0%8F"><span class="toc-number">3.1.</span> <span class="toc-text">菜单栏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%84%E8%AE%BA%E4%BA%92%E5%8A%A8"><span class="toc-number">3.2.</span> <span class="toc-text">评论互动</span></a></li></ol></li></ol>
       </div>
     
   </span>
@@ -159,12 +159,17 @@
   
 
   <div class="content e-content" itemprop="articleBody">
-    <p>如你所见，我基于<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>建立了自己的Blog网站！但<strong>建立一个让自己满意的Blog网站需要长时间的探索、学习、实践</strong>，因此我想将这个过程中遇到的问题、思路和方法记录下来，让自己在未来回看时可以复用，幸运的话也可能帮助到你，那样可就太好啦！不过需要注意的是：<strong>所有的方法均基于<a target="_blank" rel="noopener" href="https://github.com/probberechts/hexo-theme-cactus">cactus</a>主题进行，解决方案主要来自网络搜索与ChatGPT</strong>。</p>
+    <p>如你所见，我基于<strong>Hexo</strong>建立了自己的Blog网站！但建立一个让自己满意的Blog网站需要长时间的探索、学习、实践，因此我想将这个过程中遇到的<strong>问题、思路和方法</strong>记录下来，让自己在未来回看时可以复用，幸运的话也可能帮助到你，那样可就太好啦！不过需要注意的是：<strong>所有的方法均基于cactus主题进行，解决方案主要来自网络搜索与ChatGPT</strong>。</p>
+<h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>的安装。</li>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/themes/">主题选择</a>，以及<a target="_blank" rel="noopener" href="https://github.com/probberechts/hexo-theme-cactus">cactus</a>主题的安装。</li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Yb411a7ty/?share_source=copy_web&vd_source=edb0ca43b2a6285e7ce442401014e862">视频教程</a>。</li>
+</ul>
 <h2 id="结构分析"><a href="#结构分析" class="headerlink" title="结构分析"></a>结构分析</h2><p>首先应该熟悉cactus主题目录结构，大致知道各个部分的作用与意义。</p>
 <ul>
 <li><p>根目录</p>
 <ul>
-<li><code>_config.yml</code>：主题的全局配置文件，控制主题行为。</li>
+<li><code>_config.yml</code>：主题的全局配置文件，控制主题行为，注意与<code>blog</code>文件夹中的<code>_config.yml</code>区分。</li>
 <li><code>package.json</code>：管理依赖的 Node.js 模块。</li>
 <li><code>gulpfile.js</code>：Gulp 任务定义文件，自动化前端任务（如编译、优化）。</li>
 <li><code>.gitignore</code>等：版本控制和代码检查配置。</li>
@@ -206,22 +211,27 @@
 </ul>
 </li>
 </ul>
-<h2 id="页面布局"><a href="#页面布局" class="headerlink" title="页面布局"></a>页面布局</h2><h3 id="菜单栏"><a href="#菜单栏" class="headerlink" title="菜单栏"></a>菜单栏</h3><p>我想先规划一下网站的整体结构，大致分为：<strong>首页、文章、项目、关于</strong>四个部分。</p>
+<h2 id="页面布局"><a href="#页面布局" class="headerlink" title="页面布局"></a>页面布局</h2><h3 id="菜单栏"><a href="#菜单栏" class="headerlink" title="菜单栏"></a>菜单栏</h3><p>我想先规划一下网站的整体结构，大致分为：<strong>首页、文章、项目</strong>三个部分。</p>
 <ol>
 <li><p>把默认语言修改为中文，在根目录<code>_config.yml</code>（非主题文件夹）中修改<code>language: zh-CN</code></p>
 </li>
 <li><p>修改 <code>_config.yml</code> 文件，在<code>nav</code>下添加想要的菜单与文件目录：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">nav:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span></span><br><span class="line">  <span class="attr">articles:</span> <span class="string">/archives/</span></span><br><span class="line">  <span class="attr">projects:</span> <span class="string">/projects/</span></span><br><span class="line">  <span class="attr">about:</span> <span class="string">/about/</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">nav:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span></span><br><span class="line">  <span class="attr">articles:</span> <span class="string">/archives/</span></span><br><span class="line">  <span class="attr">projects:</span> <span class="string">/projects/</span></span><br></pre></td></tr></table></figure>
 
 
 </li>
 <li><p>修改<code>zh-CN.yml</code>中对应的目录结构，修改对应的项目：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">nav:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">首页</span></span><br><span class="line">  <span class="attr">about:</span> <span class="string">关于</span></span><br><span class="line">  <span class="attr">articles:</span> <span class="string">文章</span></span><br><span class="line">  <span class="attr">projects:</span> <span class="string">项目</span></span><br><span class="line">  <span class="attr">tag:</span> <span class="string">标签</span></span><br><span class="line">  <span class="attr">category:</span> <span class="string">分类</span></span><br><span class="line">  <span class="attr">search:</span> <span class="string">搜索</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">nav:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">首页</span></span><br><span class="line">  <span class="attr">articles:</span> <span class="string">文章</span></span><br><span class="line">  <span class="attr">projects:</span> <span class="string">项目</span></span><br><span class="line">  <span class="attr">tag:</span> <span class="string">标签</span></span><br><span class="line">  <span class="attr">category:</span> <span class="string">分类</span></span><br><span class="line">  <span class="attr">search:</span> <span class="string">搜索</span></span><br></pre></td></tr></table></figure>
 
 </li>
 <li><p>最后在命令行中利用命令<code>hexo new page</code>生成对应的目录结构：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new page &quot;projects&quot;</span><br><span class="line">hexo new page &quot;about&quot;</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page &quot;projects&quot;</span><br></pre></td></tr></table></figure></li>
 </ol>
+<h3 id="评论互动"><a href="#评论互动" class="headerlink" title="评论互动"></a>评论互动</h3><p>作为一个笔记博客，我希望能与关注我的人互动，因此需要设置一个方便的社交板块。可以参考cactus官方文档进行设置，<strong>从管理逻辑上来说，我希望在github上对博客、评论进行一站式管理，因此这里选择Utterances，它可以将互动评论以issues的形式反馈到github，同时在邮件上显示</strong>。整体上分为两部分：</p>
+<ul>
+<li>参考<a target="_blank" rel="noopener" href="https://github.com/probberechts/hexo-theme-cactus#utterances">Utterances</a>官方文档对github进行设置，这一设置也可以对其他开源项目复用。</li>
+<li>参考<a target="_blank" rel="noopener" href="https://github.com/probberechts/hexo-theme-cactus#utterances">cactus</a>官方文档进行进一步设置。</li>
+</ul>
 
   </div>
 </article>
@@ -259,7 +269,7 @@
     
     
       <div id="toc-footer" style="display: none">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90"><span class="toc-number">1.</span> <span class="toc-text">结构分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E5%B8%83%E5%B1%80"><span class="toc-number">2.</span> <span class="toc-text">页面布局</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8F%9C%E5%8D%95%E6%A0%8F"><span class="toc-number">2.1.</span> <span class="toc-text">菜单栏</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87"><span class="toc-number">1.</span> <span class="toc-text">前期准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90"><span class="toc-number">2.</span> <span class="toc-text">结构分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E5%B8%83%E5%B1%80"><span class="toc-number">3.</span> <span class="toc-text">页面布局</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8F%9C%E5%8D%95%E6%A0%8F"><span class="toc-number">3.1.</span> <span class="toc-text">菜单栏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%84%E8%AE%BA%E4%BA%92%E5%8A%A8"><span class="toc-number">3.2.</span> <span class="toc-text">评论互动</span></a></li></ol></li></ol>
       </div>
     
 
